@@ -1,0 +1,32 @@
+[
+    {
+        "id": "1",
+        "title": "Denim",
+        "image": "URL_DE_LA_FOTO_DE_DENIM"
+    },
+    {
+        "id": "2",
+        "title": "Abrigos",
+        "image": "URL_DE_LA_FOTO_DE_ABRIGOS"
+    },
+    {
+        "id": "3",
+        "title": "Pantalones",
+        "image": "URL_DE_LA_FOTO_DE_PANTALONES"
+    },
+    {
+        "id": "4",
+        "title": "Vestidos",
+        "image": "URL_DE_LA_FOTO_DE_VESTIDOS"
+    },
+    {
+        "id": "5",
+        "title": "Remeras",
+        "image": "URL_DE_LA_FOTO_DE_REMERAS"
+    },
+    {
+        "id": "6",
+        "title": "Polleras",
+        "image": "URL_DE_LA_FOTO_DE_POLLERAS"
+    }
+]
