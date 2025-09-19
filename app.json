@@ -20,7 +20,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.irene_imbriani.proyectoreactnative"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -28,6 +29,11 @@
     "plugins": [
       "expo-font",
       "expo-sqlite"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "7466b134-62db-4a74-973b-ffd1eddef9a4"
+      }
+    }
   }
 }
