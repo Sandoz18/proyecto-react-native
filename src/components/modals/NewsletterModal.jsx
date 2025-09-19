@@ -1,22 +1,21 @@
 import React, { useState } from 'react'
 import { StyleSheet, Text, View, Modal, TextInput, Pressable, Dimensions, Alert} from 'react-native'
 
-  //API Dimensions nos permite obtener el el ancho de la ventana al cual se adapte el Modal
+ 
   const {width} = Dimensions.get('window');
-  const NewsletterModal = ({visible, onClose, onsubmit}) => {
+  const NewsletterModal = ({visible, onClose, onSubmit}) => {
   const [email, setEmail] = useState('');
 
   const handleSubmit = () =>{
-    //validación del correo antes de enviarlo
+   
     if (email.trim()=== ''|| !email.includes('@')) {
        Alert.alert('Error', 'Por favor, ingresa un correo electrónico válido.');
        return;
     }
 
-    //llamamos a la prop que nos pasó el componente padre
-      onsubmit(email);
+      onSubmit(email);
 
-      //Limpieza input y cierre modal
+     
       setEmail('');
       onClose();
     };
@@ -64,7 +63,7 @@ import { StyleSheet, Text, View, Modal, TextInput, Pressable, Dimensions, Alert}
       </View>
 
       </Modal>
-      <Text>NewsletterModal</Text>
+    
     </View>
   )
 }

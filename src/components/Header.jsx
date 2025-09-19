@@ -1,10 +1,26 @@
-import { StyleSheet, Text, View } from 'react-native'
+// Header.js
+import { StyleSheet, Text, View, Pressable } from 'react-native'
 import {colors} from "../global/colors"
+import { useNavigation } from '@react-navigation/native'
+import { Ionicons } from '@expo/vector-icons' 
 
-const Header = ({title}) => {
+const Header = ({title, subtitle}) => {
+  const navigation = useNavigation()
+  const canGoBack = navigation.canGoBack()
+
   return (
     <View style={styles.headerContainer}>
-      <Text style={styles.textTitle}>{title}</Text>
+      {
+        canGoBack && (
+          <Pressable onPress={() => navigation.goBack()} style={styles.goBackButton}>
+            <Ionicons name="arrow-back" size={24} color={colors.white} />
+          </Pressable>
+        )
+      }
+      <View style={styles.titleContainer}>
+        <Text style={styles.textTitle}>{title}</Text>
+        <Text style={styles.textSubtitle}>{subtitle}</Text>
+      </View>
     </View>
   )
 }
@@ -12,13 +28,26 @@ const Header = ({title}) => {
 export default Header
 
 const styles = StyleSheet.create({
-
-  headerContainer:{
-     backgroundColor: colors.neonGreen,
-     heigth: 200,
+  headerContainer: {
+    backgroundColor: colors.cobaltBlue,
+    height: 100,
+    justifyContent: 'center', 
+    alignItems: 'center',    
   },
-  textTitle:{
-  fontSize:16
+  titleContainer: {
+    
   },
- 
-})
+  textTitle: {
+    fontSize: 16,
+    color: colors.white,
+  },
+  textSubtitle: {
+    fontSize: 16,
+    color: colors.white,
+  },
+  goBackButton: {
+    position: 'absolute', 
+    left: 15,            
+    top: 50,             
+  },
+});

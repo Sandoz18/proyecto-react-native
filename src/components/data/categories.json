@@ -1,32 +1,38 @@
 [
-    {
-        "id": "1",
-        "title": "Denim",
-        "image": "URL_DE_LA_FOTO_DE_DENIM"
-    },
-    {
-        "id": "2",
-        "title": "Abrigos",
-        "image": "URL_DE_LA_FOTO_DE_ABRIGOS"
-    },
-    {
-        "id": "3",
-        "title": "Pantalones",
-        "image": "URL_DE_LA_FOTO_DE_PANTALONES"
-    },
-    {
-        "id": "4",
-        "title": "Vestidos",
-        "image": "URL_DE_LA_FOTO_DE_VESTIDOS"
-    },
-    {
-        "id": "5",
-        "title": "Remeras",
-        "image": "URL_DE_LA_FOTO_DE_REMERAS"
-    },
-    {
-        "id": "6",
-        "title": "Polleras",
-        "image": "URL_DE_LA_FOTO_DE_POLLERAS"
-    }
+  {
+    "id": "denim",
+    "title": "Denim",
+    "image": "https://i.postimg.cc/kgtjXP4r/category-Denim.jpg"
+  },
+  {
+    "id": "abrigos",
+    "title": "Abrigos",
+    "image": "https://i.postimg.cc/7L3m010m/category-abrigos-jpg.jpg"
+  },
+  {
+    "id": "pantalones",
+    "title": "Pantalones",
+    "image": "https://i.postimg.cc/7PsX3ZJ8/9.jpg"
+  },
+  {
+    "id": "vestidos",
+    "title": "Vestidos",
+    "image": "https://i.postimg.cc/rwWJ2GnM/12.jpg"
+  },
+  {
+    "id": "remeras",
+    "title": "Remeras",
+    "image": "https://i.postimg.cc/L6JDNFjq/10.jpg"
+  },
+  {
+    "id": "polleras",
+    "title": "Polleras",
+    "image": "https://i.postimg.cc/jds2bysP/category-polleras.jpg"
+  },
+  {
+    "id": "buzos",
+    "title": "Buzos",
+    "image": "https://i.postimg.cc/hPYyBtKb/category-buzos-jpg.jpg"
+  }
 ]
+
