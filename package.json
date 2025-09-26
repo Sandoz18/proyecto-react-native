@@ -9,6 +9,9 @@
     "web": "expo start --web",
     "build": "npx expo export -p web"
   },
+   "engines": {
+    "node": ">=18.0.0" 
+  },
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
